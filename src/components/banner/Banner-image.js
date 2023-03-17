@@ -1,6 +1,6 @@
-import styles from "./header-image.module.scss";
+import styles from "./banner-image.module.scss";
 
-const HeaderImage = ({ image, title, height }) => {
+const BannerImage = ({ image, title, height }) => {
   return (
     <div className={styles["header"]}>
       {title && <span className={styles["header-title"]}>{title}</span>}
@@ -8,4 +8,4 @@ const HeaderImage = ({ image, title, height }) => {
     </div>
   );
 };
-export default HeaderImage;
+export default BannerImage;
