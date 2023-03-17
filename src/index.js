@@ -1,23 +1,23 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import "./index.scss";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Home from "./routes/home/Home";
-import Topbar from "./components/topbar/Topbar";
-import About from "./routes/about/About";
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.scss';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import Home from './routes/home/Home';
+import Topbar from './components/topbar/Topbar';
+import About from './routes/about/About';
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: '/',
     element: <Home />,
   },
   {
-    path: "/about",
+    path: '/about',
     element: <About />,
   },
 ]);
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Topbar />

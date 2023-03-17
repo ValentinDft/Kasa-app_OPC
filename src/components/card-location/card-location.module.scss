@@ -2,18 +2,21 @@
   height: 340px;
   width: 340px;
   border-radius: 10px;
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)),
-    url("https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-1-1.jpg");
-  background-position: center;
-  background-size: cover;
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
   &-title {
     color: white;
     font-size: 18px;
     font-weight: 500;
-    width: 120px;
+    max-width: 190px;
     padding: 20px;
   }
 }

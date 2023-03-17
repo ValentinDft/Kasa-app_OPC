@@ -1,10 +1,18 @@
-import styles from "./card-location.module.scss";
+import styles from './card-location.module.scss';
 
-const CardLocation = ({ image, title, description }) => {
+const CardLocation = (props) => {
+  // console.log('props', props);
   return (
-    <div className={styles["card"]}>
-      <div className={styles["card-title"]}>
-        <p>Titre de la location</p>
+    <div
+      style={{
+        background: `linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url(${props.cover})`,
+        backgroundPosition: 'center',
+        backgroundSize: 'cover',
+      }}
+      className={styles['card']}
+    >
+      <div className={styles['card-title']}>
+        <p>{props.title}</p>
       </div>
     </div>
   );
