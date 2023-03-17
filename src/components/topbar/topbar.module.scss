@@ -2,5 +2,19 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 20px;
+  padding: 40px 0px;
+
+  &-nav {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    h2 {
+      font-weight: 500;
+      color: #ff6060;
+      cursor: pointer;
+      &:hover {
+        border-bottom: #ff6060 2px solid;
+      }
+    }
+  }
 }
