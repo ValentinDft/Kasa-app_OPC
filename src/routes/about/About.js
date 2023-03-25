@@ -1,10 +1,9 @@
-import { NavLink } from 'react-router-dom';
+import styles from './about.module.scss';
 
 const About = () => {
   return (
-    <div>
+    <div className={styles['container-about']}>
       <h1>A propos</h1>
-      <NavLink to='/'>Go home</NavLink>
     </div>
   );
 };

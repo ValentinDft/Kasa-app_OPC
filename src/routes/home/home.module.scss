@@ -1,12 +1,13 @@
 .container {
+  padding: 0 80px;
   &-list {
     display: grid;
     grid-template-columns: repeat(auto-fill, 340px);
     grid-gap: 40px;
     justify-content: space-between;
-    margin: 40px 0px;
     background-color: #f6f6f6;
     border-radius: 25px;
     padding: 50px;
+    margin: 50px 0px;
   }
 }

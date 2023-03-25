@@ -1,0 +1,26 @@
+.errorPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #ff6060;
+  gap: 50px;
+  margin-bottom: 80px;
+
+  h1 {
+    font-size: 288px;
+    font-weight: 700;
+  }
+
+  h2 {
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 80px;
+  }
+
+  span {
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration-line: underline;
+  }
+}

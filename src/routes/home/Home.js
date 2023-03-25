@@ -8,19 +8,21 @@ import CardLocation from '../../components/card-location/Card-location';
 
 const Home = () => {
   return (
-    <div className={styles['container']}>
-      <BannerImage
-        image={imgHeader}
-        title='Chez vous, partout et ailleurs'
-        height={240}
-      />
+    <>
+      <div className={styles['container']}>
+        <BannerImage
+          image={imgHeader}
+          title='Chez vous, partout et ailleurs'
+          height={240}
+        />
 
-      <div className={styles['container-list']}>
-        {data.map((location) => (
-          <CardLocation key={location.id} {...location} />
-        ))}
+        <div className={styles['container-list']}>
+          {data.map((location) => (
+            <CardLocation key={location.id} {...location} />
+          ))}
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 export default Home;

@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 40px 0px;
+  padding: 40px 80px;
 
   &-nav {
     display: flex;
@@ -12,9 +12,6 @@
       font-weight: 500;
       color: #ff6060;
       cursor: pointer;
-      &:hover {
-        border-bottom: #ff6060 2px solid;
-      }
     }
   }
 }
