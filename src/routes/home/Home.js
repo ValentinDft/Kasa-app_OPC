@@ -1,5 +1,5 @@
 import styles from './home.module.scss';
-import imgHeader from '../../assets/cover.png';
+import imgHeader from '../../assets/img/cover.png';
 import data from '../../api/data.json';
 
 // Components

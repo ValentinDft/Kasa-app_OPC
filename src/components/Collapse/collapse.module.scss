@@ -1,0 +1,33 @@
+.collapse {
+  width: 80%;
+  background-color: #ff6060;
+  height: 47px;
+  color: white;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
+  z-index: 1;
+
+  p {
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  img {
+    cursor: pointer;
+  }
+
+  &-content {
+    width: 80%;
+    background-color: #f6f6f6;
+    font-size: 24px;
+    font-weight: 400;
+    color: #ff6060;
+    padding: 40px 20px 20px 20px;
+    border-radius: 5px;
+    position: relative;
+    top: -5px;
+  }
+}
