@@ -6,7 +6,7 @@ import About from './routes/about/About';
 import Footer from './components/footer/Footer';
 import Topbar from './components/topbar/Topbar';
 import Home from './routes/home/Home';
-import ErrorPage from './components/errorPage/ErrorPage';
+import ErrorPage from './routes/error/Error';
 
 const router = createBrowserRouter([
   {

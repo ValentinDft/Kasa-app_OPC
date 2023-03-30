@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom';
-import styles from './errorPage.module.scss';
+import styles from './error.module.scss';
 
-const ErrorPage = () => {
+const Error = () => {
   return (
     <div className={styles['errorPage']}>
       <h1>404</h1>
@@ -12,4 +12,4 @@ const ErrorPage = () => {
     </div>
   );
 };
-export default ErrorPage;
+export default Error;

@@ -9,3 +9,19 @@
     font-weight: 500;
   }
 }
+
+@media only screen and (max-device-width: 768px) {
+  .header {
+    justify-content: flex-start;
+    height: 150px !important;
+    &-title {
+      font-size: 24px;
+      padding-left: 20px;
+    }
+  }
+}
+@media only screen and (max-device-width: 425px) {
+  .header {
+    height: 120px !important;
+  }
+}

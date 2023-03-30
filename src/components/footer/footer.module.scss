@@ -17,3 +17,11 @@ footer {
     width: 100px;
   }
 }
+
+@media only screen and (max-device-width: 425px) {
+  footer {
+    p {
+      font-size: 12px;
+    }
+  }
+}

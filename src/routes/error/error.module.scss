@@ -16,11 +16,34 @@
     font-size: 36px;
     font-weight: 500;
     margin-bottom: 80px;
+    text-align: center;
   }
 
   span {
     font-size: 18px;
     font-weight: 500;
     text-decoration-line: underline;
+  }
+}
+
+@media only screen and (max-device-width: 768px) {
+  .errorPage {
+    h1 {
+      font-size: 144px;
+    }
+  }
+}
+@media only screen and (max-device-width: 425px) {
+  .errorPage {
+    margin-top: 45%;
+    h1 {
+      font-size: 96px;
+    }
+    h2 {
+      font-size: 18px;
+    }
+    span {
+      font-size: 14px;
+    }
   }
 }

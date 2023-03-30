@@ -20,3 +20,17 @@
     padding: 20px;
   }
 }
+
+@media only screen and (max-device-width: 768px) {
+  .card {
+    height: 280px;
+    width: 280px;
+  }
+}
+
+@media only screen and (max-device-width: 425px) {
+  .card {
+    height: 270px;
+    width: 350px;
+  }
+}
