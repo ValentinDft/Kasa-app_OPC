@@ -7,6 +7,8 @@
   align-items: flex-end;
   cursor: pointer;
   transition: all 0.3s ease;
+  background-position: center !important;
+  background-size: cover !important;
 
   &:hover {
     transform: scale(1.05);

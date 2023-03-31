@@ -7,6 +7,7 @@ import Footer from './components/footer/Footer';
 import Topbar from './components/topbar/Topbar';
 import Home from './routes/home/Home';
 import ErrorPage from './routes/error/Error';
+import Accommodation from './routes/accommodation/Accommodation';
 
 const router = createBrowserRouter([
   {
@@ -29,6 +30,11 @@ const router = createBrowserRouter([
       {
         path: 'about',
         element: <About />,
+      },
+      ,
+      {
+        path: 'accommodation/:id',
+        element: <Accommodation />,
       },
     ],
   },

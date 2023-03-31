@@ -25,6 +25,7 @@
   .container {
     padding: 0 20px;
     &-list {
+      grid-gap: 20px;
       display: flex;
       flex-direction: column;
       justify-content: center;
