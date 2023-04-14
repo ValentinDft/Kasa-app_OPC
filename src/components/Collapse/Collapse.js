@@ -5,10 +5,23 @@ import { useState } from 'react';
 
 const Collapse = ({ title, content }) => {
   const [isOpen, setIsOpen] = useState(false);
+
+  const renderContentList = () => {
+    if (isOpen && Array.isArray(content)) {
+      return (
+        <ul className={styles['collapse-content-list']}>
+          {content.map((item) => (
+            <li key={item}>{item}</li>
+          ))}
+        </ul>
+      );
+    }
+  };
+
   return (
-    <>
+    <div className={styles['collapse']}>
       <div
-        className={styles['collapse']}
+        className={styles['collapse-header']}
         style={{ marginBottom: isOpen ? '0px' : '30px' }}
       >
         <p>{title}</p>
@@ -16,9 +29,10 @@ const Collapse = ({ title, content }) => {
           src={isOpen ? pictoUp : pictoDown}
           alt='picto'
           onClick={() => setIsOpen(!isOpen)}
+          className={styles['collapse-header-img']}
         />
       </div>
-      {isOpen && (
+      {isOpen && !Array.isArray(content) && (
         <p
           className={styles['collapse-content']}
           style={{ marginBottom: isOpen ? '30px' : '0px' }}
@@ -26,7 +40,8 @@ const Collapse = ({ title, content }) => {
           {content}
         </p>
       )}
-    </>
+      {renderContentList()}
+    </div>
   );
 };
 

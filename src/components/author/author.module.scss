@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+
+  span {
+    font-size: 18px;
+    font-weight: 500;
+    width: 90px;
+    text-align: end;
+  }
+
+  img {
+    border-radius: 100px;
+    height: 64px;
+    width: 64px;
+  }
+}
+
+@media only screen and (max-device-width: 425px) {
+  .container {
+    span {
+      font-size: 13px;
+    }
+    img {
+      height: 50px;
+      width: 50px;
+    }
+  }
+}

@@ -5,34 +5,34 @@ import arrowRight from '../../assets/picto/arrow-right.png';
 const Carrousel = ({ images }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  const handlePreviousSlide = () => {
+  const clickPreviousSlide = () => {
     const previousSlide =
       currentSlide === 0 ? images.length - 1 : currentSlide - 1;
     setCurrentSlide(previousSlide);
   };
 
-  const handleNextSlide = () => {
+  const clickNextSlide = () => {
     const nextSlide = currentSlide === images.length - 1 ? 0 : currentSlide + 1;
     setCurrentSlide(nextSlide);
   };
   return (
-    <div className={styles['carrousel']}>
+    <div className={styles['container']}>
       <div
         style={{
           background: `url(${images[currentSlide]})`,
         }}
         className={styles['carrousel-image']}
       >
-        <div className={styles['carrousel-controls']}>
+        <div className={styles['carrousel-actions']}>
           {images.length > 1 && (
             <img
               src={arrowLeft}
               alt='arrow-left'
-              onClick={handlePreviousSlide}
+              onClick={clickPreviousSlide}
             />
           )}
           {images.length > 1 && (
-            <img src={arrowRight} alt='arrow-right' onClick={handleNextSlide} />
+            <img src={arrowRight} alt='arrow-right' onClick={clickNextSlide} />
           )}
         </div>
         <div className={styles['carrousel-pagination']}>
