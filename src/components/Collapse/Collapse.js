@@ -23,12 +23,12 @@ const Collapse = ({ title, content }) => {
       <div
         className={styles['collapse-header']}
         style={{ marginBottom: isOpen ? '0px' : '30px' }}
+        onClick={() => setIsOpen(!isOpen)}
       >
         <p>{title}</p>
         <img
           src={isOpen ? pictoUp : pictoDown}
           alt='picto'
-          onClick={() => setIsOpen(!isOpen)}
           className={styles['collapse-header-img']}
         />
       </div>

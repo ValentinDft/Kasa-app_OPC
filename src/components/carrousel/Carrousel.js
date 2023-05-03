@@ -36,7 +36,9 @@ const Carrousel = ({ images }) => {
           )}
         </div>
         <div className={styles['carrousel-pagination']}>
-          <span>{`${currentSlide + 1}/${images.length}`}</span>
+          <span>
+            {images.length > 1 && `${currentSlide + 1}/${images.length}`}
+          </span>
         </div>
       </div>
     </div>
