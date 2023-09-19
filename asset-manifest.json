@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Kasa-app_OPC/static/css/main.54303fc0.css",
+    "main.js": "/Kasa-app_OPC/static/js/main.462dc342.js",
+    "static/media/cover-about.png": "/Kasa-app_OPC/static/media/cover-about.dc7a08e1faa2e14de0bd.png",
+    "static/media/cover.png": "/Kasa-app_OPC/static/media/cover.1168be13650bb18b456e.png",
+    "index.html": "/Kasa-app_OPC/index.html",
+    "main.54303fc0.css.map": "/Kasa-app_OPC/static/css/main.54303fc0.css.map",
+    "main.462dc342.js.map": "/Kasa-app_OPC/static/js/main.462dc342.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.54303fc0.css",
+    "static/js/main.462dc342.js"
+  ]
+}
